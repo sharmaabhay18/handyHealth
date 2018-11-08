@@ -28,15 +28,10 @@ const CustomDrawerComponent = (props) => {
 export default class App extends Component {
 
   componentWillMount() {
-    Dialogflow.setConfiguration('5fd88f183081439986dc3a8d8b8881ac', Dialogflow.LANG_ENGLISH);
+    Dialogflow.setConfiguration('', Dialogflow.LANG_ENGLISH);
 
     const config = {
-    apiKey: 'AIzaSyDB6lBIbcpqCAN7Y-iYb2XiwN_fjMdRea4',
-    authDomain: 'handyhealth-8bfaa.firebaseapp.com',
-    databaseURL: 'https://handyhealth-8bfaa.firebaseio.com',
-    projectId: 'handyhealth-8bfaa',
-    storageBucket: 'handyhealth-8bfaa.appspot.com',
-    messagingSenderId: '589895958645'
+   
   };
   if (!firebase.apps.length) {
     firebase.initializeApp(config);
